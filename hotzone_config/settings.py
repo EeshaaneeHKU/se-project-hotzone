@@ -24,7 +24,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '$duk!*j-@ej3wco7)n_a(r9!)j0uh+w24y#0g44e5d(g*h6#=!'
+#SECRET_KEY = '$duk!*j-@ej3wco7)n_a(r9!)j0uh+w24y#0g44e5d(g*h6#=!'
+SECRET_KEY = env('HOTZONE_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -80,7 +81,7 @@ WSGI_APPLICATION = 'hotzone_config.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 DATABASES = {
-'default': env.dj_db_url('DATABASE_URL')
+'default': env.dj_db_url('DATABASE_URL'),
 }
 
 
