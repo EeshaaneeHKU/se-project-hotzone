@@ -1,12 +1,11 @@
-#se-project-hotzone
-UID: 3035552234
+#se-project-hotzone UID: 3035552234
 
-URL: https://stormy-castle-55753.herokuapp.com/
+URL: https://stormy-castle-55753.herokuapp.com/ 
 Name of the App on Heroku: stormy-castle-55753
 
-Superuser details:
-    username: eesh
-    password: eesh2022
+Superuser details: 
+username: eesh 
+password: eesh2022
 
 This is the first iteration of the Individual Project for the course COMP3297. It consists of the user taking in input of the location and then storing the location details, x-coordinate, y-coordinate and and location address (if available). The input in this iteration only takes the location data, extracts the details from the repective url and store it in store the json data accordingly. The major limitation is that it doesnt connect the location data to the patient (will be dont in the next iteration).
 
