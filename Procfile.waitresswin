@@ -1,3 +1,1 @@
-web: waitress-serve hotzone_config.wsgi:application
-
-web: waitress-serve --port=$PORT hotzone_config.wsgi:application
+web: python manage.py runserver
